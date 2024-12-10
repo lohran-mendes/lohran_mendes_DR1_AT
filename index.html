@@ -8,11 +8,19 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Fira+Sans:wght@400;700&family=Poppins&display=swap"
       rel="stylesheet"
+      type="text/css"
     />
     <title>Lohran Mendes</title>
     <meta name="description" content="Desenvolvedor localizado em Taubaté." />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <style>
+      #link-fixed {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        height: 48px;
+        z-index: 10;
+      }
       html {
         font-size: 62.5%;
         scroll-behavior: smooth;
@@ -69,6 +77,10 @@
           max-width: initial;
           word-break: initial;
         }
+      }
+      .header-logo {
+        width: 350px;
+        height: 38px;
       }
       .decoracao {
         color: #e0e0e0;
@@ -202,6 +214,7 @@
         }
       }
       .footer {
+        align-items: center;
         position: relative;
         background: #000000;
         padding-top: 30px;
@@ -481,6 +494,8 @@
 
       .perfil {
         max-width: 100%;
+        width: 300px;
+        height: 433px;
         height: auto;
         display: block;
       }
@@ -541,9 +556,8 @@
       <img
         class="header-logo"
         src="./img/Lohran.svg"
-        alt="logo escrito Lohran."
-        width="350"
-        height="38"
+        alt="logo escrito Lohran Mendes."
+        title="logo escrito Lohran Mendes."
       />
       <nav class="header-menu">
         <ul class="header-lista">
@@ -559,8 +573,7 @@
         class="perfil"
         src="./img/perfil.jpg"
         alt="uma imagem de perfil do lohran."
-        width="300"
-        height="433"
+        title="uma imagem de perfil do lohran."
       />
       <div class="introducao-texto">
         <h1>
@@ -570,6 +583,9 @@
         </h1>
         <p>Localizado em Brasília.</p>
       </div>
+      <span>
+        <a href="https://www.linkedin.com/in/lohran-mendes/"><img src="./img/linkedin.svg" alt="imagem do linkedin" id="link-fixed"/></a>
+      </span>
     </main>
 
     <section
